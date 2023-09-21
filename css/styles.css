@@ -1,3 +1,4 @@
+
 body {
     margin: 60px auto;
     width: 70%;
@@ -41,3 +42,9 @@ ul.posts {
 ul.posts li {
     list-style: none;
 }
+
+.blurb {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+

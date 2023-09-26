@@ -1,28 +1,154 @@
 <!DOCTYPE html>
-<html>
- <head>
-   <title>Khanh Do Portfolio</title>
-   <link rel="stylesheet" href="css/style-new.css">
- </head>
- <body>
-   <nav>
-     <ul>
-       <li><a href=”/”>Home</a></li>
-       <li><a href=”/about”>About</a></li>
-       <li><a href=”/resume”>Resume</a></li>
-       <li><a href=”/blog”>Blog</a></li>
-     </ul>
-   </nav>
-   <div class=”container”>
-     <div class=”blurb”>
-       <h1>Khanh Do</h1>
-       <p>Computer Science Undergraduate</a></p>
-     </div>
-   </div>
-   <footer>
-   <ul>
-     <li><a href=”mailto:YOUREMAIL”>do.h.khanh@gmail.com</a></li>
-   </ul>
-   </footer>
- </body>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Khanh Do | Portfolio </title>
+
+        <!-- Embed page for social media posts -->
+        <meta property="og:description" content="Khanh Do Portfolio">
+        <meta property="og:title" content="YOUR_SITE | Portfolio Template">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.YOUR_SItE.com">
+        <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
+        <meta property=​"og:​site_name" content=​"YOUR_SITE.com">
+
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@mobypixel">
+        <meta name="twitter:creator" content="@mobypixel">
+        <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
+        <meta name="twitter:description" content="YOUR_SITE description">
+        <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+        <!-- Page Style -->
+        <link rel="stylesheet" type="text/css" href="style.css?version=1">    
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="rightVerticalLine">KHANH DO</a>
+            <a href="image-example.html">Resume</a>
+            <a href="text-example.html">Projects</a>
+            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
+            </a>
+        </div>
+
+        <!-- Header with Image & Text -->
+        <div class="hero-image" style="background-image: url('img/header-bg.jpg');">
+            <div class="coverDiv">
+                <img class="coverArt rounded" src="img/portfolio-pic.jpg" alt="Logo" height="350" ></img>
+                <div class="hero-text">
+                    <h1>Khanh Do</h1>
+                    <h3>Computer Science Undergraduate</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Description Section -->
+        <div class="descriptionDiv">
+
+            <!-- Section -->
+            <h2>Projects</h2>
+
+            <!-- Portfolio Grid -->
+            <div class="grid">
+
+                <!-- Portfolio Item -->
+                <a href="project1.html" class="card">
+                    <div class="content">
+                        <img src="img/card1.jpg" alt="Card Image" height="390" width="390"></img>
+                        <div class="card-body">
+                            <div class="subtitle">CPSC 581</div>
+                            <div class="title">Project 1</div>
+                            <div class="description">Monster Avatar Creation Application</div>
+                        </div>
+                    </div>
+                </a>
+
+                
+                <!-- Portfolio Item -->
+                <a href="image-example.html" class="card">
+                    <div class="content">
+                        <img src="img/card2.jpg" alt="Card Image" height="390" width="390"></img>
+                        <div class="card-body">
+                            <div class="subtitle">CPSC 581</div>
+                            <div class="title">Project 2</div>
+                            <div class="description">...</div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio Item -->
+                <a href="image-example.html" class="card">
+                    <div class="content">
+                        <img src="img/card2.jpg" alt="Card Image" height="390" width="390"></img>
+                        <div class="card-body">
+                            <div class="subtitle">CPSC 581</div>
+                            <div class="title">Project 3</div>
+                            <div class="description">...</div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <!-- Portfolio Item -->
+                <a href="image-example.html" class="card">
+                    <div class="content">
+                        <img src="img/card2.jpg" alt="Card Image" height="390" width="390"></img>
+                        <div class="card-body">
+                            <div class="subtitle">CPSC 581</div>
+                            <div class="title">Project 4</div>
+                            <div class="description">...</div>
+                        </div>
+                    </div>
+                </a>
+
+                
+
+            </div>
+            <!-- Section -->
+            <h2>About Me</h2>
+            <p>Hello! My name is Khanh Do and I'm currently an undergraduate student pursuing a BSc in Computer Science at the University of Calgary. Outside of school, I have completed a 16 month long internship where I gained experience in database management systems and data cleaning. My favourite coding languages are Python and Java! </p>
+
+        </div>
+
+        <!-- Share Your Socials -->
+        <div class="textBubbleDiv">
+            <p class="light">LinkedIn :
+            <a href="https://www.linkedin.com/in/khanh-h-do/" target="_blank"><img class="socialLink" src="img/linkedin.png" height="25" width="25"></img></a>
+            </p>
+        </div>
+
+        <div class="contact">
+            <div class="contact-body">
+                <!-- Section -->
+                <h2>Contact</h2>
+                <p>Email: </p>
+                <p><strong><a href="mailto:do.h.khanh@gmail.com">do.h.khanh@gmail.com</a></strong></p>
+            </div>
+        </div>
+
+        <!-- Feel free to put your own text here or share the love. -->
+        <div class="footer">
+            <p class="subtle"><i></i></p>
+        </div>
+
+        <!-- Navigation Script -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </body>
 </html>

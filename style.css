@@ -1,7 +1,7 @@
 body {
     height: 100%;
     color: #252525;
-    background-color: #eee;
+    background-color: #f9f6f3;
     margin: 0px;
     line-height: 30px;
     display: block;
@@ -35,12 +35,15 @@ h1, h2 {
     margin-top: 50px;
     margin-bottom: 25px;
     line-height: 40px;
+    color: grey;
+    
 }
 
 h3 {
     font-size: 2em;
     margin-bottom:25px;
     margin-top: 30px;
+    color: grey;
 }
 
 h4 {
@@ -113,6 +116,7 @@ h4 a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    color: #5A5A5A
 }
 
 .light {
@@ -135,7 +139,7 @@ h4 a:hover {
     text-align: center;
     color: #838383;
     font-size: 1em;
-    background-color: rgb(195,195,200);
+    background-color: grey;
 }
 
 .textBubbleDiv {
@@ -249,7 +253,7 @@ h4 a:hover {
 }
 
 .contact {
-    background-color: rgb(225,225,230);
+    background-color:gray;
     padding: 25px;
     margin: auto;
 }
@@ -269,6 +273,7 @@ h4 a:hover {
     margin-top: 40px;
     margin-bottom: 10px;
     line-height: 40px;
+    color: white
 }
 
 .card img {
@@ -345,12 +350,12 @@ h4 a:hover {
     top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: grey;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: rgb(50,50,50);
+    background-color: grey;
 }
 
 .topnav a {

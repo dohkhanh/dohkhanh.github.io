@@ -598,3 +598,13 @@ img {vertical-align: middle;}
   from {opacity: .4} 
   to {opacity: 1}
 }
+
+.container-beside {
+    display: flex; /* Use flexbox to arrange images horizontally */
+    justify-content: center; 
+}
+
+.container-beside img {
+    max-width: 100%; /* Ensure the images don't exceed their container's width */
+    margin-right: 50px; /* Add some spacing between images */
+}

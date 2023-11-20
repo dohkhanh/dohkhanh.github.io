@@ -45,14 +45,20 @@
             <!-- Section -->
             <h1>TeaMatic</h1>
             <p> <center> <i>Khanh Do, Bonnie Wu, Jessica Tran, Yihan Wei</i></center></p>
-            <img src="" width="50%">
+            <div class="container-beside">
+                <img src="img/project3/tea-steeper.jpg" width="20%">
+                <img src="img/project3/tea-steeper2.jpg" width="20%">
+            </div>
 
             <!-- 1. Overview-->
             <h3> Overview</h3>
             <p> TeaMatic is a simple and effective solution to the following everyday problem: oversteeping your tea. Sometimes when steeping tea, it can be annoying or a waste of time to just stand around and wait for it to finish. However,
                 if you leave to do something else, there is a possibility that you might get too caught up in your task that you forget about the tea that you're making! Setting a timer on your phone may help to combat this issue, but if you're 
-                on a part of your task that you don't want to interrupt, for example a good part of a movie, then it would be inconvenient to have to get up and get your tea before it oversteeps. That is where our product, the TeaMatic, comes in!
-                With the TeaMatic, it will automatically raise the tea bag once it is done steeping so that you can fetch your tea whenever it is convenient for you! 
+                on a part of your task that you don't want to interrupt, for example, a good part of a movie, then it would be inconvenient to have to get up and get your tea before it oversteeps. That is where our product, the TeaMatic, comes in!
+            </p>
+            <p>TeaMatic is a semi-automatic tea brewing machine. The application will sense the cup using proximity and allow the user to click on a button to set a time for the tea to brew. The buttons available are separated by their 
+                tea types, with different teas associated with different timers. Once a timer button is pressed, the main display terminal will begin a countdown. We are using an arm mechanism that will lower and raise the tea bag by 
+                holding onto the string. 
             </p>
 
             <!-- 2. Design Sketch Section -->
@@ -253,13 +259,14 @@
 
             <!-- 4. Concept Video -->
             <h3>Concept Video</h3>
-            <p> After choosing the tea steeper concept as our idea, we created a concept video that included how this useful would be helpful, and how we would imagine someone using it. 
+            <p> After choosing the tea steeper concept as our idea, we created a concept video that included how this would be helpful, and how we would imagine someone using it. 
             </p>
+            <iframe width="420" height="315"
+                src="https://www.youtube.com/embed/Ksz13hjZYM8?si=Dt4SMGE6vtvCnbnq">
+            </iframe>
             
             <!-- 5. Contribution -->
-            <h3>Final Product & Contribution</h3>
-            <p> Our final product of the tea steeper concept is the TeaMatic! (Include which features we included and why and also design choices and why)
-            </p>
+            <h3>Implementation & Contribution</h3>
             <p>We coded our product using C++ and created our product using the Arduino. We split up the project by having 1 person take home the Arduino kit to put it all together and record the final demo video, and the rest 
                 of the group split the rest of the tasks amongst eachother. These tasks included: creating the simulation on TinkerCAD, making the concept video, making the storyboard for the final demo, and writing the description 
                 to justify and explain the features and design choices made for our project. 
@@ -267,18 +274,50 @@
             <p>For my contribution to the project, I worked on different simulations for the tea steeper on TinkerCAD to allow the group member who took the kit home to put together the project easier. I also wrote out a storyboard for
                 the final demo video so that they could record it easier too. 
             </p>
+      
+            <!-- 7. Choices-->
+            <h3> Choices Leading to the Final Design</h3>
+
+            <h4> Choice #1. Automatic vs. Semi-automatic </h4>
+            <p>Although an automatic tea brewing machine can guarantee the same quality of tea consistently, we choose to implement a semi-automatic machine that would allow the user to customize their brew. Steep time is one of the most 
+                important things when it comes to making a delicious cup of tea. If a cup of tea is steeped too long, the taste will end up being too unpleasantly bitter. Therefore, we believed it to be important to give the user the choice 
+                to have some control over how long they want their tea to steep. 
+            </p>
+
+            <h4>Choice #2. Spool vs. Arm</h4>
+            <p>There were two main mechanisms we had in mind to lift the tea bag. The choices were between the spool and the arm. The spool spins around the string attached to the tea bag to control the height, while the arm system simply 
+                tilts up and down to raise the item attached. We initially planned to use the spool system, however some issues occurred while making the physical prototype to work. We finalized the arm mechanism and had it work. It ended 
+                up also being easier to attach the tea bag string with the arm. 
+            </p>
+
+            <h4>Choice #3. Manual Increase of Time vs. Time by Tea Type vs. Time by Set Intervals </h4>
+            <p>There were a lot of options on how to implement the buttons that allow the user to control the timer. First we played with the idea of having a button increase the original timer by set intervals. For example, button 1 would 
+                increase the timer by 30 seconds each time it is pressed. Second, we had the idea of allowing the user to simply click on the timer in accordance to which tea they are brewing. For instance, clicking on the button labeled 
+                “Green Tea” would automatically set the timer to countdown from 2 mins. Lastly, the buttons themselves could be set to common steep times, such as buttons showing “1 min, 2 mins, and 3 mins.” While debating over which option 
+                to choose, we recognized that buttons displaying time by tea types and set intervals could be overlapped. They could be implemented in similar ways and could allow us to provide the user more convenience. The user would have 
+                an easier process grasping how long to brew the tea if the buttons were labelled by tea type and provide them with the timer ahead of time. The user could make an informed choice based on tea type or their own preferences to 
+                steep time. 
+            </p>
+
+            <h4>Choice #4. External Battery vs. Plug-in </h4>
+            <p>The servo motor is usually supplied by an external battery source, however we ran into some issues when we tried to run the Arduino and the servo motor with a single 9V external battery. This left us to attempt to run the 
+                application by connecting to a laptop, which did work much better. There was also success in plugging in the Arduino with a 5W power adapter into the wall outlet. We rationalized that since we were going for the impression 
+                that the appliance is made for convenience, we are appealing to the users that they are not required to get up from their computer device to pick up their tea once it is done brewing. Therefore, it was understandable for the 
+                machine to only work by connecting to your computer or outlet. 
+            </p>
+
+            <h4>Choice #5. Proximity vs. Weight </h4>
+            <p>We want to first check to make sure that there is something below the tea bag for the tea to brew in before the system proceeds with the next step. The opinions we were considering were composed of using a proximity sensor or a 
+                weight sensor. Both were logical and standard choices. The finalized prototype comes with the proximity sensor. We decided on this idea since it also helps to make sure that the cup is close enough and positioned correctly under 
+                the arm mechanism.</p>
+
 
             <!-- 6. Demo and Code-->
-            <h3> Video and Source Code</h3>
-
+            <h3> Final Demo Video</h3>
+            <p> Below is the final demo video for the TeaMatic:</p>
             <iframe width="420" height="315"
-                src="https://www.youtube.com/embed/KbEzl8JcHWc?si=lsio0NeY3zrf40Ev">
+                src="https://www.youtube.com/embed/w1gVyt93ovc?si=zff-5LBJ-HTr03X2">
             </iframe>
-      
-
-            <p>Source code: <a href="https://glitch.com/edit/#!/monster-mix-and-match"> https://glitch.com/edit/#!/monster-mix-and-match</a> </p>
-            <p> Interactive site: <a href="https://monster-mix-and-match.glitch.me/">https://monster-mix-and-match.glitch.me/</a></p>
-
         </div>
 
         <!-- Feel free to put your own text here or share the love. -->
